@@ -2,7 +2,7 @@
 
 #include <stdlib.h>
 #include <string.h>
-#include "MikroC.h"
+#include "mikroC.h"
 
 extern YYSTYPE yylval;
 
@@ -196,8 +196,7 @@ scan    Delk(); return SCAN;
           if (z==EOF) return 0;
           if (z=='\n') { NovyRadek break; } } }
 
-.  { Delk();
-     Chyba("Neznamy znak"); }
+.  { printf("Unknown character: %s (ASCII: %d)\n", yytext, yytext[0]); Delk(); Chyba("Neznamy znak"); }
 
 %%
 

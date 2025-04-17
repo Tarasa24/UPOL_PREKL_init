@@ -1,6 +1,6 @@
 %{
 
-#include  "MikroC.h"
+#include  "mikroC.h"
 
 int yylex();
 void yyerror(const char *);

@@ -26,6 +26,6 @@ void LexInit();
 
 void Flush();
 
-#include "MikroC.tab.hpp"
+#include "mikroC.tab.h"
 
 #endif
